@@ -1,0 +1,471 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('./imagenes.pngs/Fondo\ de\ pared\ de\ tablón.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+body > .header-cv {
+    width: 100%;
+}
+
+.header-cv > .container-navbar {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo,
+.navbar {
+    width: 50%;
+    margin: 1rem;
+}
+.navbar {
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar > li {
+    list-style: none;
+   
+}
+
+.navbar > li > a {
+    
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 0.5rem;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+}
+
+.navbar > li > a:hover {
+    background-color: #2c5364;
+}
+
+.logo {
+    color: azure;
+    font-family: cursive;
+    margin-left: 50px;
+    font-size: 40px;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+section{
+    width: 100%;
+    height: auto;
+    padding: 4rem 6% 2rem;
+}
+
+.home-content h3{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: snow;
+    
+}
+.am-h3{
+    color: aquamarine;
+}
+.me-span{
+    color: aquamarine;
+}
+.home-content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    background-clip: text;
+}
+
+.home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+
+.typed-cursor{
+    animation: typedjsBlink 0.7s infinite;
+    -webkit-animation: typedjsBlink 0.7s infinite;
+    animation: typedjsBlink 0.7s infinite;
+}
+.home-content p{
+    font-size: 1.1rem;
+    max-width: 80%;
+    color: honeydew;
+}
+.social-media{
+    margin-left: 10px;
+}
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    color: aquamarine;
+    border: 3px solid aquamarine;
+    font-size: 2rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px aquamarine;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ;
+    text-decoration: none;
+    
+    
+}
+.social-media a:hover i{
+    filter: brightness(50%);
+}
+.social-media a:hover{
+    transform: translateY(-3) scale(1.5);
+    background-color: aquamarine;
+    
+    
+}
+.btnt{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: white;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem;
+    font-size: 1.6rem;
+    color: #203a43;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .5s;
+}
+.btnt:hover{
+    transform: translateY(-3) scale(1.5);
+    background-color: aquamarine;
+}
+.perfil-img img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    margin-right: 100px;
+   
+    animation: float 2s ease-in-out infinite;
+    box-shadow: 5px 5px 70px grey;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-20px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+.services{
+    width: 100%;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.service{
+    flex: 1 1 20rem;
+    background: var(--second-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+   background-color: #203a43;
+}
+
+.service:hover {
+    background-color: #2c5364;
+    border: 2px solid aquamarine;
+}
+.service i{
+    font-size: 7rem;
+    color: aqua;
+
+}
+
+.services h2{
+    margin-bottom: 5rem;
+   color: honeydew;
+}
+.services h2 {
+    text-align: center;
+    font-size: 4.5rem;
+    color: gainsboro;
+    font-family: cursive;
+   
+}
+.service h3 {
+    font-size: 1.8rem;
+    color: aliceblue;
+    font-family: cursive;
+    
+}
+
+.service p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    margin: 1rem 0 3rem;
+    color: whitesmoke;
+}
+
+.btn{
+    display: inline-block;
+    padding: 12px 1.5rem;
+    background-color: aquamarine;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: black;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+    text-decoration: none;
+    
+}
+.latest-projects {
+    width: 100%;
+    padding: 4rem 6% 2rem;
+}
+.latest-projects h2{
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 4.5rem;
+    color: honeydew;
+    font-family: 'Courier New', Courier, monospace;
+}
+.span-project{
+    color: aquamarine;
+}
+.container-projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    
+}
+.container-projects .project{
+    flex: 1 1 calc(30.50% - 2.5rem);
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+    margin: 1.25rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    
+}
+.project img{
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+.project:hover img{
+    transform: scale(1.1);
+
+}
+.project .portafolio-cv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2.1rem ;
+    transition: .5s ease;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(74%);
+    transition: transform 0.3s ease;
+
+}
+.project:hover .portafolio-cv {
+    transform: translateY(0);
+}
+
+.portafolio-cv h4{
+    color: cornsilk;
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+    font-family: cursive;
+}
+.portafolio-cv p{
+    margin: .3rem 0 1rem;
+    color: aliceblue;
+}
+.contact{
+    width: 100%;
+    padding: 4rem 6% 2rem;
+}
+.contact h2{
+    margin-bottom: 2rem;
+    color: aliceblue;
+    font-size: 4.5rem;
+    text-align: center;
+    font-family: cursive;
+}
+span{
+    color: aqua;
+}
+input[type=text],
+select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+   
+}
+.col-77 textarea{
+    width: 75%;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 2px solid gray;
+    color: white;
+    
+
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: white;
+   color: #203a43;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 30px;
+    border: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: .5s ease;
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 30px;
+    
+   
+}
+.boton-pc{
+    text-align: center;
+    margin-left: 8rem;
+    margin-top: 20px;
+}
+.boton-submit:hover{
+    background-color: aquamarine;
+}
+.container-div {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 19%;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+}
+.footer-tex p{
+    font-size: 1.6rem;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+.footer-icon{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .8rem;
+    transition: .5s ease;
+    
+}
+ .footer-icon a > i{
+    font-size: 7rem;
+    color: aquamarine;
+ 
+ }
+@media screen and (max-width: 350px) {
+   .navbar{
+    flex-direction: column;
+   }
+   .header-navbar{
+    flex-direction: column;
+   }
+   .navbar > li{
+    margin-bottom: 10px;
+   }
+   .navbar > li > a{
+    font-size: 16px;
+   }
+   .perfil-img img{
+    width: 15rem;
+   }
+   
+
+}
+@media screen and (max-width: 350px) {
+
+    .container-projects .project {
+        flex: 1 1 100%;
+        
+    }
+}
+@media screen and (max-width: 768px) {
+    .container-projects .project {
+        flex: 1 4 100%;
+    }
+}
